@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script> 
+		function mostrar() { 
+			//alert("ingreso a la funcion");
+			var nom=document.form1.nombre.value; 
+		//alert('Ingreso el nombre: ' + nom); 
+		var ape=document.form1.apellido.value;
+		
+		var sex=document.form1.sexo.value; 
+
+		var ci=document.form1.ci.value;
+		var nac=document.form1.nacim.value;
+		
+		var corr=document.form1.correo.value;
+		
+		var pas=document.form1.pas.value;
+		var insti=document.form1.institucion.value;
+		
+		var anti=document.form1.antiguedad.value;
+		var so=document.form1.antiguedad.value;
+		alert('Ingreso el nombre: ' + nom + ' Ingreso el apellido: ' + ape + ' Ingreso el sexo : ' + sex + ' Ingreso Canet de Identidad' + ci + 'Su fecha de nacimiento es : ' + nac + ' Su correo es : ' + corr + ' Su clave es : ' + pas + ' Su Institucion es : ' + insti + 'Su antiguedad es : ' + anti); 
+
+		/*var anti=document.form1.antiguedad.value;
+
+		alert('Ingreso el nombre:' + nom ' <br>ingreso el apellido: ' + ape); 
+		alert('Y la edad:' + ed); */
+		} 
+	</script>
+</head>
+<body>
+
+	<h1> Formulario del Estudiante</h1>
+	<form id="form1" name="form1">
+		<fieldset>
+			<legend>Datos Personales</legend>
+
+			<label>Nombre</label>
+			<input type="text" name="nombre" id="nombre" value="" maxlength="20" placeholder="Escriba su nombre en mayusculas" required >	
+			console
+			<label>Apellido</label>
+			<input type="text" name="apellido" id="apellido" value="" maxlength="20"  placeholder="escriba su apellido">
+			<label>Sexo</label>
+			<input type="radio" name="sexo" value="h">Honmbre
+			<input type="radio" name="sexo" value="m">Mujer<br>
+			<input type="radio" name="sexo" value="o">Otro<br>
+			<label>CI</label>
+			<input type="number" name="ci" id="ci" value="" >		
+			<label>Fecha de Nacimiento</label>
+			<input type="date" name="nacim" id="nacim">
+			<label>Correo Electronico</label>
+			<input type="email" name="correo" id="correo" value="">	
+			<label>Contraseña</label>
+			<input type="password" name="pas" id="pas" value="" maxlength="20" autofocus>		
+		</fieldset>
+		<fieldset>
+			<legend>Datos Laborales</legend>
+			<label>La empresa donde trabaja es:</label>
+			<select id="institucion">
+				<option value="Pública">Pública</option>
+				<option value="Privada">Privada</option>
+				<option value="Cooperativa">Cooperativa</option>
+				<option value="Comunitaria">Comunitaria</option>
+				<option value="Mixta">Mixta</option>
+			</select>
+			<laberl>Años de antiguedad</laberl>
+			<input type="radio" name="antiguedad"  id="antiguedad" value="1">De 0 a 11 meses<br>
+			<input type="radio" name="antiguedad" id="antiguedad"  value="2">De 1 a 5 años<br>
+			<input type="radio" name="antiguedad" id="antiguedad" value="3">De 6 a 10 años<br>
+			<input type="radio" name="antiguedad" id="antiguedad" value="4">De 11 a 15 años<br>
+			<input type="radio" name="antiguedad" id="antiguedad" value="5">De 16 a 20 años<br>
+			<label>Software que utiliza</label>
+			<select name="software[]" multiple="multiple" size="14">
+				<optgroup label="Sistema Operativo">
+					<option value="windows">Windows</option>
+					<option value="linux">Linux</option>
+					<option value="mac">Mac</option>
+				</optgroup>
+				<optgroup label="Ofimática">
+					<option selected="selected">Power Point</option>
+					<option value="word">Word</option>
+					<option value="excel">Excel</option>
+					<option value="acces">Acces</option>	
+				</optgroup>
+				<optgroup label="De Desarrollo">
+					<option value="sublime">Sublime</option>
+					<option value="textwrangler">Text Wrangler</option>
+					<option value="notepad">Note Pad ++</option>
+					<option value="coffecap">Coffe Cup</option>
+				</optgroup>
+			</select>
+		</fieldset>
+		<br>
+		<input type="button" value="Guardar" id="guardar" name="guardar" onclick="mostrar();">
+		<input type="reset" value="Cancelar">
+	</form>
+</body>
+</html>

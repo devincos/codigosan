@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webINCOS-3</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<font color="red" aling="center" size="5"> Formulario del Estudiante</font>
+<FORM>
+
+<CENTER>
+		<h1><legend align="center">Datos Personales</legend></h1><br>
+<TABLE BORDER>
+
+<TR>
+   <TD>Nombres:</TD>
+   <TD> <INPUT TYPE="text" name= "nombre" id="nombre" SIZE=48 MAXLENGTH=48> F.Nacimiento:
+        <INPUT TYPE="date" NAME="fnac" id="fnac" SIZE=8 MAXLENGTH=8> Carnet: 
+        <INPUT TYPE="text" NAME="ci" id="ci"SIZE=8 MAXLENGTH=8>Codigo Estudiante: 
+        <INPUT TYPE="text" NAME="cod" id="cod"SIZE=8 MAXLENGTH=8></TD>
+<TR>
+   <TD>Apellidos:</TD>
+   <TD> Paterno<INPUT TYPE="text" name="apellidop"id="apellidop" SIZE=48 MAXLENGTH=48>Materno
+   <INPUT TYPE="text" name="apellidom"id="apellidom" SIZE=48 MAXLENGTH=48></TD>
+   <td rowspan="4"><input type="image" name="boton" src="imagenes/boton.jpg" 
+        width="107" height="135" hspace="10" align="middle"></td>
+<TR>
+   <TD>Calle y número:</TD>
+   <TD> <INPUT TYPE="text" NAME="domicilio" id="domicilio"SIZE=48 MAXLENGTH=48>Telefono:
+       <INPUT TYPE="text" NAME="telefono" id="telefono"SIZE=36 MAXLENGTH=26>
+   </TD>
+<TR>
+  <TD>Correo electronico:</TD>
+  <TD><input type="email" name="correo" id="correo" value="" SIZE=25 MAXLENGTH=25> 
+  Ciudad:<INPUT TYPE="text" NAME="ciudad" id="ciudad"SIZE=36 MAXLENGTH=36>
+  Provincia:<INPUT TYPE="text" NAME="provi" id="prove"SIZE=36 MAXLENGTH=36></TD>
+<TR>
+   <TD>Colegio de egreso: </TD>
+   <TD> <INPUT TYPE="text" NAME="colegio" id="colegio" SIZE=40 MAXLENGTH=40> Año de egreso: 
+         <INPUT TYPE="text" NAME="anio" id="anio" SIZE=19 MAXLENGTH=19></TD>
+<TR>
+   <TD>Sexo:</TD>
+   <TD> <SELECT NAME="OPCION">
+            <OPTION>Hombre
+            <OPTION>Mujer
+        </SELECT>Escoja una opción</TD>
+
+<TR>
+   <!--<TD>Fotografia</TD>
+   <TD align>
+	<form action="mailto:imagen@server.com" method="post" 
+                    enctype="text/plain" name="imagen">
+ 		<input type="image" name="boton" src="imagenes/boton.jpg" 
+        width="107" height="135" hspace="10" align="middle">
+	</form>-->
+ <TR>
+   <TD>Contraseña</TD>
+   <TD>  
+      	<input type="password" name="pas" id="pas" value="" maxlength="20" autofocus>
+   </TD>
+<TR>
+   <TD><B>Pulse aquí:</B></TD>
+   <TD ALIGN=CENTER>
+       <!--<INPUT TYPE="submit" VALUE="Registrar datos ">
+       <INPUT TYPE="reset" VALUE="Borrar los datos"></TD>-->
+       <input type="button" value="registrar datos" onclick="mostrar_datos()"></input>
+       <INPUT TYPE="reset" VALUE="limpiar datos" onclick="limpiar_datos()"></TD>
+</TABLE>
+</CENTER>
+</FORM>
+<form>
+<center>
+<br>
+LISTA DE INSCRITOS<br>
+ <table border="1">
+        <th>CODIGO</th>
+		<th>CARNET</th>
+		<th>NOMBRE</th>
+		<th>APELLIDO PATERNO</th>
+		<th>APELLIDO MATERNO</th>
+	    <tbody id="cuadro">
+		     
+	    </tbody>
+	</table>
+</center>
+</form>
+</body>
+<<!--<input type="button" value="registrar" onclick="mostrar_datos()"></input>-->
+
+<script type="text/javascript" src="js.js">funciones</script>
+
+</html>

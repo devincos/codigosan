@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webINCOS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+
+	<h1> Formulario del Estudiante</h1>
+	<form >
+		<fieldset>
+			<h4><legend>Datos Personales</legend></h4><br>
+            <label>Codigo del EStudiante</label>
+            <input type="text" name="codigo" id="codigo" value="" maxlength="10" placeholder="Escriba su codigo de estudiante asignado por el instituto" required ><br>
+            <label>Carnet de identidad</label>
+             <input type="text" name="carnet" id="carnet" value="" maxlength="12" placeholder="Escriba su numero de carnet" required ><br>
+			<label>Nombre</label>
+			<input type="text" name="nombre" id="nombre" value="" maxlength="20" placeholder="Escriba su nombre en mayusculas" required >	
+			<br>
+			<label>Apellido Paterno</label>
+			<input type="text" name="apellidoP" id="apellidoP" value="" maxlength="20"  placeholder="escriba su apellido paterno"><br>
+			<label>Apellido Materno</label>
+			<input type="text" name="apellidoM" id="apellidoM" value="" maxlength="20"  placeholder="escriba su apellido materno"><br>
+			<label>Sexo</label>
+			<input type="radio" name="sexo" value="h">Hombre
+			<input type="radio" name="sexo" value="m">Mujer<br>
+			<label>Direccion</label>
+			<input type="text" name="direccion" id="direccion" value="" >	<br>	
+			<label>Fecha de Nacimiento</label>
+			<input type="date" name="nacim" id="nacim"><br>
+			<label>Correo Electronico</label>
+			<input type="email" name="correo" id="correo" value="">	<br>
+			<label>Colegio de egreso</label>
+            <input type="text" name="colegio" id="colegio" value="" maxlength="20"  placeholder="escriba su coelgio de egreso"><br>
+			<label>Contraseña</label>
+			<input type="password" name="pas" id="pas" value="" maxlength="20" autofocus>		
+		</fieldset>
+		
+		<br>
+		<input type="button" value="Guardar" id="guardar" name="guardar" onclick="mostrar();">
+		<input type="reset" value="Cancelar">
+	</form>
+</body>
+</html>
